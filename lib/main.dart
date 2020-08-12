@@ -9,6 +9,12 @@ import 'package:provider/provider.dart';
 
 import 'services/service.dart';
 
+/*
+
+Dependency restclient will be injected to all the widgets through providers
+
+*/
+
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   final dio = Dio(); // Provide a dio instance
@@ -36,6 +42,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+/*Home page which lists products from rest api */
 class MyHomePage extends StatefulWidget {
   MyHomePage({Key key, this.title}) : super(key: key);
 

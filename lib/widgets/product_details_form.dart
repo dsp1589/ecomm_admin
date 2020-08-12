@@ -4,6 +4,10 @@ import 'package:ecomm_admin/widgets/form/form.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+/*
+* New form for the product is dynamically built and input is taken from user
+* */
+
 class ProductDetailsForm extends StatefulWidget {
   final String productName;
 
@@ -25,7 +29,7 @@ class _ProductDetailsFormState extends State<ProductDetailsForm> {
             body: fields.data.isEmpty
                 ? _getNoField()
                 : Container(
-                    child: FormWidget(fields.data),
+                    child: FormWidget(fields.data), //Using forms from flutter, to easily manage validations
                   ),
             appBar: _getAppBar,
           );

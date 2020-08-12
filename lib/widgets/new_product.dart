@@ -3,6 +3,9 @@ import 'package:ecomm_admin/misc/ui_constants.dart';
 import 'package:ecomm_admin/models/products.dart';
 import 'package:flutter/material.dart';
 
+
+//Product to be added. Name and required form fields url
+
 class NewProduct extends StatelessWidget {
   final Product item;
   final Function(Product) didTap;

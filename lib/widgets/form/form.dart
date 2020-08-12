@@ -5,7 +5,7 @@ import 'package:ecomm_admin/models/form_field.dart';
 import 'package:ecomm_admin/widgets/form/field.dart';
 import 'package:flutter/material.dart';
 
-
+//Wrapper forf fields
 class FormWidget extends StatefulWidget{
 
   final List<FormItem> fields;
@@ -30,6 +30,7 @@ class _FormWidgetState extends State<FormWidget>{
     ), top: true,);
   }
 
+  //custom form fields for dynamically building forms from rest response
   List<Widget> _buildForms(){
     List<Widget> items = [];
     items.addAll(widget.fields.map((e) => CustomFormField(e, validator: (inp){
