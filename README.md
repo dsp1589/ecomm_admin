@@ -6,6 +6,12 @@ EComm admin app to add products
 
 This project is a starting point for a Flutter application.
 
+Run flutter Pub Get command in root folder
+
+Run build_runner command to regenerate the model and service client
+
+Hit run/debug in android studio to launch in sim or device
+
 A few resources to get you started if this is your first Flutter project:
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
